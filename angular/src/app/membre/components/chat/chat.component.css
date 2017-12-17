@@ -1,0 +1,30 @@
+.ii {
+
+    width: 100%;
+    height: 90%;
+    /*overflow: scroll;*/
+    overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+.big{
+	height:450px;	
+	width:100%;
+}
+
+
+.conversation-left{
+    width:80%;  float:left; margin-bottom:30px; margin-left:20px;margin-right:20px;
+}
+
+
+.conversation-right{
+    width:80%;  float:right; margin-bottom:30px; margin-left:20px;margin-right:20px;
+}
+
+#mycutom{
+    float:left;
+    margin-right:50px;
+}

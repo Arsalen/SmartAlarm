@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\membre",
+    "\\app\\membre\\components",
+    "\\app\\membre\\components\\home",
+    "\\app\\membre\\components\\personne",
+    "\\app\\membre\\components\\profile",
+    "\\app\\sign-in",
+    "\\app\\sign-up",
+    "\\app\\_services"
+  ],
+  "SelectedNode": "\\app\\membre\\components\\home\\home.component.html",
+  "PreviewInSolutionExplorer": false
+}

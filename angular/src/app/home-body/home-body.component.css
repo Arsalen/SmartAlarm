@@ -1,0 +1,33 @@
+#tampon{
+    width:100%;
+    height:150px;
+
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color:#2D3F51;
+
+    color: white;
+    padding-top:2%;
+    padding-bottom:20%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#add_font{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#fix_image{
+    width:80%;
+}
+
+#spacer{
+    height:20px;
+}
+#spacer80{
+    height: 80px;
+}
+
+
+#img-directeur{
+    width:300px;
+    height: 400px;
+}

@@ -1,0 +1,66 @@
+<div style="margin-top:30px;">
+</div>
+
+<div class="container">
+<div class="panel panel-default" id="custom">
+  <div class="panel-heading">Inscription</div>
+  <div class="panel-body">
+
+
+<br>
+    <form>
+       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.email" name="email"  placeholder=" Email" #email="ngModel" required ></md-input>
+       </p>
+
+       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.nom" name="nom"  placeholder=" Nom" #nom="ngModel" required ></md-input>
+       </p>
+
+       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.prenom" name="prenom"  placeholder=" Prenom" #prenom="ngModel" required ></md-input>
+       </p>
+
+       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.username" name="username"  placeholder=" Alias" #username="ngModel" required ></md-input>
+       </p>
+
+       <p>
+        <md-input type="password" class="demo-full-width" [(ngModel)]="model.password" name="password"  placeholder=" Mot de passe" #password="ngModel" required ></md-input>
+       </p>
+
+<!--       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.enabled" name="enabled"  placeholder=" Enabled" #enabled="ngModel" required ></md-input>
+       </p> -->
+
+<!--       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.fcmtoken" name="fcmtoken"  placeholder=" Fcmtoken" #fcmtoken="ngModel" required ></md-input>
+       </p> -->
+
+<!--       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.lastpasswordresetdate" name="lastpasswordresetdate"  placeholder=" Lastpasswordresetdate" #lastpasswordresetdate="ngModel" required ></md-input>
+       </p> -->
+
+<!--       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.song" name="song"  placeholder=" Song" #song="ngModel" required ></md-input>
+       </p> -->
+
+<!--       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.status" name="status"  placeholder=" Status" #status="ngModel" required ></md-input>
+       </p> -->
+
+       
+
+      <br>
+
+      <br><br>
+      <button md-raised-button color="primary"  (click)="register()" >S'inscrire</button>
+      <br><br>
+    </form>
+
+<p style="color:red">{{errMessage}}</p>
+<p style="color:green">{{successMessage}}</p>
+<button md-raised-button style="float:right" (click)="redirectTo()"  color="primary">Connexion</button>
+  </div>
+</div>
+</div>

@@ -1,0 +1,28 @@
+Aug 11, 2017 9:11:51 PM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|ec406b0e405a7afe6d05384e65907a3f
+Aug 11, 2017 9:11:51 PM ceiSmartalarm.Log info
+INFO: Drop odd webhook succeeded.
+Aug 11, 2017 9:11:51 PM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Aug 11, 2017 9:11:51 PM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Aug 11, 2017 9:12:22 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49889New connection accepted.
+Aug 11, 2017 9:12:22 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49890New connection accepted.
+Aug 11, 2017 9:12:22 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49889 Request content:
+Aug 11, 2017 9:12:22 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49889 Response of server:HTTP 200 Destination not found.
+Aug 11, 2017 9:12:28 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49890 Request content:
+Aug 11, 2017 9:12:28 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:49890 Response of server:HTTP 200 Destination not found.
+Aug 14, 2017 8:19:02 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|f67e1ceb0bae003a1f8dd60c2c060b2c
+Aug 14, 2017 8:19:03 AM ceiSmartalarm.Log info
+INFO: Drop odd webhook succeeded.
+Aug 14, 2017 8:19:04 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Aug 14, 2017 8:19:04 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080

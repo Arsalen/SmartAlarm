@@ -1,0 +1,124 @@
+<div class="head-section" *ngIf="member">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img id="profile_image" src="https://c1.staticflickr.com/7/6178/6140989632_1c8066563d_b.jpg" />
+      </div>
+
+      <div class="col-sm-8">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>{{member.nom_prenom}}</h1>
+          </div>
+          <div class="col-sm-6">
+            <h1>{{member.titre}}</h1>
+          </div>
+        </div>
+        <br><br>
+        <hr>
+        <div class="row">
+          <div class="col-sm-10">
+            <h1>Coordonnées</h1>
+            <h3> Email:</h3>
+            <p>{{member.email}}</p>
+            <h3> Téléphone:</h3>
+            <p>{{member.numero_tel}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" *ngIf="member">
+  <!-->body section </!-->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>CV {{member.nom_prenom}}</h1>
+    </div>
+    <div class="panel-body">
+
+
+      <div class="row">
+        <div class="col-sm-9">
+
+          <div class="list-group">
+            <button type="button" class="list-group-item" *ngFor="let diplome of member.diplomes_formations"> 
+                <h3>{{diplome.annee}}</h3>
+                <p>{{diplome.titre}}</p>
+              </button>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <h1>DIPLOMES ET FORMATIONS</h1>
+          <p>Liste des diplomes et formations professionnelles </p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h2>Activités de recherche</h2>
+          <p>Liste des recherches et formations professionnelles </p>
+        </div>
+        <div class="col-sm-9">
+          <div class="list-group">
+            <button type="button" class="list-group-item" *ngFor="let diplome of member.activite_recherche"> 
+                <h3>{{diplome.annee}}</h3>
+                <p>{{diplome.titre}}</p>
+              </button>
+          </div>
+        </div>
+      </div>
+
+
+      <br><br>
+      
+       <div class="row">
+        <div class="col-sm-9">
+          <div class="list-group">
+            <button type="button" class="list-group-item" *ngFor="let diplome of member.activite_enseignement"> 
+                <h3>{{diplome.annee}}</h3>
+                <p>{{diplome.titre}}</p>
+              </button>
+          </div>
+        </div>
+         <div class="col-sm-3">
+          <h2>Activites d'ensignement</h2>
+          <p>liste des recherches et formations professionnelles </p>
+        </div>
+      </div>
+
+
+      <br><br>
+
+      <h1>Position actuelle:</h1>
+      <p>{{member.position_actuelle}}</p>
+    <br>
+    <button md-raised-button color="primary">Version PDF</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+<div class="bottom-section">
+</div>

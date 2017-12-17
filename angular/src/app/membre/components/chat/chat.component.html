@@ -1,0 +1,119 @@
+<div class="well"><p>Tchat</p></div>
+
+<md-card>
+<div class="row">
+  <div class="col-sm-7">
+      <div class="panel panel-default" class="big">
+    <div class="panel-heading">Liste des membres en ligne</div>
+    <div class="panel-body" class="ii">
+      
+      <div class="list-group">
+        <a *ngFor="let member of members" class="list-group-item" (click)="render_conversation(member)"  >{{member.nom_prenom}} </a>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--current conversation-->
+ 
+  <div class="col-sm-5">
+     <div class="panel panel-default"  class="big">
+        <div class="panel-heading">Conversation</div>
+        <div class="panel-body" class="ii">
+
+<md-card  *ngFor="let message of messages" class="{{message.dir}}">
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle"  alt="Cinque Terre" width="30" height="30" id="mycustom">
+    {{message.contenue}}
+</md-card>
+
+<!--
+
+  <md-card  class="conversation-left" >
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle"  alt="Cinque Terre" width="30" height="30" id="mycustom">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo iste, non iure libero incidunt. Ad saepe quisquam dicta natus, similique fuga iste adipisci, architecto eaque quos, facilis. Laborum, et.
+  </md-card>
+
+
+  <md-card class="conversation-right">
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sunt dolorum magni, consequuntur amet enim voluptatibus velit. Voluptas sint laborum molestiae, totam, repellendus nihil assumenda tempore ullam ipsum animi possimus.
+  </md-card>
+
+  <md-card  class="conversation-left" >
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle"  alt="Cinque Terre" width="30" height="30" id="mycustom">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo iste, non iure libero incidunt. Ad saepe quisquam dicta natus, similique fuga iste adipisci, architecto eaque quos, facilis. Laborum, et.
+  </md-card>
+
+
+  <md-card class="conversation-right">
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sunt dolorum magni, consequuntur amet enim voluptatibus velit. Voluptas sint laborum molestiae, totam, repellendus nihil assumenda tempore ullam ipsum animi possimus.
+  </md-card>
+
+
+  <md-card  class="conversation-left" >
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle"  alt="Cinque Terre" width="30" height="30" id="mycustom">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo iste, non iure libero incidunt. Ad saepe quisquam dicta natus, similique fuga iste adipisci, architecto eaque quos, facilis. Laborum, et.
+  </md-card>
+
+
+  <md-card class="conversation-right">
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sunt dolorum magni, consequuntur amet enim voluptatibus velit. Voluptas sint laborum molestiae, totam, repellendus nihil assumenda tempore ullam ipsum animi possimus.
+  </md-card>
+
+
+  <md-card  class="conversation-left" >
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle"  alt="Cinque Terre" width="30" height="30" id="mycustom">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo iste, non iure libero incidunt. Ad saepe quisquam dicta natus, similique fuga iste adipisci, architecto eaque quos, facilis. Laborum, et.
+  </md-card>
+
+
+  <md-card class="conversation-right">
+    <img src="http://img.cinemablend.com/quill/8/6/8/c/6/e/868c6e0dbe43bdd6c35ad2e0a54eafdeb992e6a5.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sunt dolorum magni, consequuntur amet enim voluptatibus velit. Voluptas sint laborum molestiae, totam, repellendus nihil assumenda tempore ullam ipsum animi possimus.
+  </md-card>
+
+  
+-->
+
+
+
+
+
+      <div class="jumbotron" style="padding:10px">
+        <input id="email" type="text" class="form-control" name="email" [(ngModel)]="msg" placeholder="votre message ..">
+        <br>
+        <button type="button"  (click)="send_new_message()"  class="btn btn-success" style="float:right" >Envoyer</button> 
+        <br><br>
+      </div>
+
+
+
+
+
+
+        </div>
+     </div>
+  
+  </div>
+</div>
+
+
+
+<div  style="height:40px;"></div>
+<button md-raised-button color="primary" (click)="addgroupe()"  >Créer un groupe </button>
+
+
+
+
+
+</md-card>

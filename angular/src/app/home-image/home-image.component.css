@@ -1,0 +1,15 @@
+
+#headerwrap {
+	width: 100%;
+	background: url(http://esportsentrepreneur.com/wp-content/uploads/2015/12/negotiations-in-project-management.jpg) #0b333f no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	;
+	min-height: 500px;
+	margin-top: -60px;
+	padding-top:160px;
+	text-align:center;
+    color: white;
+}

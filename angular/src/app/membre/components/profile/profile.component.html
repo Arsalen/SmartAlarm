@@ -1,0 +1,124 @@
+<div class="well">
+  <p> Profil</p>
+</div>
+
+
+
+<div style="margin-top:30px;">
+</div>
+
+<div class="panel panel-default" id="custom" *ngIf="this.profile">
+        <div class="panel-heading" style="background-color:  #2d3f51; color:white;" >Visualiser et éditer votre profil</div>
+
+        <div class="panel-body"  >
+
+                <div class="row">
+                          <div class="col-sm-6">
+                                    <h4> Profil</h4>
+                                    <br>
+                                      <md-card>
+
+                                              <label class="control-label col-sm-2" for="status">Nom</label><p class="boldme" >&nbsp;&nbsp;&nbsp;{{this.profile.nom}}</p>
+                                              <label class="control-label col-sm-2" for="status">Prenom</label><p class="boldme" >&nbsp;&nbsp;&nbsp;{{this.profile.prenom}}</p>
+
+                                              <label class="control-label col-sm-2" for="status">Alias</label>
+                                                <div class="col-sm-10">
+                                                  <input type="text" name="alias"  [(ngModel)]="profile.username"  placeholder="Alias" disabled="" class="mat-input form-control" >
+                                                </div>
+
+                                                <label class="control-label col-sm-2" for="status">Email</label>
+                                                <div class="col-sm-10">
+                                                  <input type="text" name="email"  [(ngModel)]="profile.email"  placeholder="Email" disabled="" class="mat-input form-control" >
+                                                </div>
+
+                                              <label class="control-label col-sm-2" for="status">Status</label>
+                                                <div class="col-sm-10">
+                                                  <input type="text" name="status"  [(ngModel)]="profile.status"  placeholder="Status" disabled="" class="mat-input form-control" >
+                                                </div>
+
+                                              <div style="height:180px;"></div>
+
+
+<!--                                               <table class="table table-bordered">
+                                                  <tbody>
+
+                                                    <tr>
+                                                        <td><div class="boldme"> Nom </div></td>
+                                                        <td>{{profile.nom}}</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><div class="boldme"> Prénom </div></td>
+                                                        <td>{{profile.prenom}}</td>
+                                                    </tr>
+                                                  </tbody>
+                                               </table>   -->
+
+
+                                      </md-card>    
+                          </div>
+
+
+                          <div class="col-sm-6">
+                                  <h4>Editer votre profil</h4>
+
+
+
+
+
+                                 <br>
+                                  <form>
+
+                                      <fieldset >
+<!--                                       <p>
+                                        <legend>Vous pouvez changer votre Nom ou/et Prénom :</legend>
+                                       </p>   -->
+                                       <p>
+                                        Nom : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="nom" [(ngModel)]="profile.nom"  placeholder="Nom" class="mat-input form-control" ><br>
+                                       </p>
+                                       <p>
+                                        Prénom : <input type="text" name="prenom" [(ngModel)]="profile.prenom"  placeholder="Prenom" class="mat-input form-control"><br>
+                                       </p>
+
+                                      </fieldset>
+
+                                    <!--
+                                     <p>
+                                       <md-input class="demo-full-width"  name="username" [(ngModel)]="profile.username"  placeholder="Nom"></md-input>
+                                       <md-input class="demo-full-width"  name="prenom" [(ngModel)]="profile.prenom"  placeholder="Prenom"></md-input>
+                                     </p>
+
+                                       <br>
+                                     <p>
+                                         <md-input class="demo-full-width"  name="email"  [(ngModel)]="profile.email"  placeholder="Email" disabled="true" style="background:#cccccc; color:#ffffff" ></md-input>
+                                     </p>
+                                     -->
+                                      <br>
+
+
+
+                                    
+
+<!--                                    <h5>Enregistrer les modifications apportées sur votre profile ?</h5>    -->
+                                    <button md-raised-button color="primary" (click)="enregistrerModif()">Enregistrer</button>
+                                    <p style="color:red">{{errMessage}}</p>
+                                    <p style="color:green">{{successMessage}}</p>
+                                    <br>
+                                    <br>
+
+
+
+
+                                    <br><br>
+                                  </form>
+                          </div>
+              </div>
+
+
+
+
+
+
+
+        </div>
+</div>

@@ -1,0 +1,73 @@
+<div id="wrapper">
+
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+
+        <a routerLink="/home">Espace membre</a>
+
+      </li>
+      <li>
+        <a routerLink="/home/profil">Profil</a>
+      </li>
+      <li>
+        <a routerLink="/home/personne">Administration</a>
+      </li>
+
+    <!--  <li>
+        <a routerLink="/home/docs">Bibliothèque en ligne</a>
+      </li>
+      <li>
+        <a routerLink="/home/projets">Projets</a>
+      </li>
+      <li>
+        <a routerLink="/home/chat">Tchat</a>
+      </li>
+      <li>
+        <a routerLink="/home/notif">Notifications</a>
+      </li>-->
+
+    </ul>
+
+
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+
+
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+
+<div class="center"> <br/>
+    <h1>Bienvenue sur votre espace personnel smartalarm</h1>
+</div>
+
+
+
+    <!-- Information raised circle button with ripple effect -->
+    <button class="btn btn-lg pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" type="button" style="position:fixed;background-color: green; opacity: 0.5;
+    filter: alpha(opacity=50);right: 0;
+    top: 0;"   data-toggle="modal" data-target=".bs-example-modal-sm" ><span class="glyphicon glyphicon-log-out"></span></button>
+    <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header"><h4>Se déconnecter <i class="fa fa-lock"></i></h4></div>
+          <div class="modal-body" style="align-content: center;"><i class="fa fa-question-circle"></i> Vous allez etre déconnecté(e)!<br>Voulez-vous continuer ?</div>
+          <div class="modal-footer"><a href="javascript:;" class="btn btn-primary btn-block" (click)="logout()">Déconnection</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+  </div>
+  <!-- /#page-content-wrapper -->
+
+
+
+</div>

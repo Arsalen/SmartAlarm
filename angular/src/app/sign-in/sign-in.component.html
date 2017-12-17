@@ -1,0 +1,50 @@
+
+
+<br><br><br>
+
+
+
+<div *ngIf="ac">
+  <h1>{{ac.access}}</h1>
+</div>
+
+<div class="container">
+ <div class="panel panel-default" id="custom">
+   <div class="panel-heading">Connexion</div>
+    <div class="panel-body">
+      <br>
+<div class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="username">Alias</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="username" [(ngModel)]="model.username" #username="ngModel" required placeholder="Enter votre username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="password">Mot de passe</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Enter mot de passe">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+<!-->      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>    </!-->
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" (click)="login()"  class="btn btn-default">Se connecter</button>
+    </div>
+  </div>
+</div>
+<p style="color:red">{{errMessage}}</p>
+<p style="color:green">{{successMessage}}</p>
+
+<button md-raised-button style="float:right" (click)="redirectTo()"  color="primary">Inscription</button>
+    </div>
+</div>
+
+
+</div>

@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="panel panel-default" >
+        <div class="panel-heading">Actualités du laboratoire</div>
+        <div class="panel-body" *ngIf="news" style="padding-top:20px;">
+
+
+          <div class="col-sm-6"  *ngFor="let new of news" >
+            <div class="panel panel-default">
+              <div class="panel-body">
+               <h3> {{new.titre}}</h3>
+               <p>{{new.date}}</p>
+                {{new.contenue}}
+                </div>
+              <div class="panel-footer" style="background-color: #2D3F51;color: white">Postulée par l'admin le {{new.date}}</div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+  </div>
+</div>

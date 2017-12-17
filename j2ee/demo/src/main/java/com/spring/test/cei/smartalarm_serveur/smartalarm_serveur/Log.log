@@ -1,0 +1,242 @@
+Feb 24, 2017 10:03:07 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:03:08 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:03:08 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded.
+Feb 24, 2017 10:03:08 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:03:33 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60207
+Feb 24, 2017 10:03:33 AM ceiSmartalarm.Log info
+INFO: Http content : 
+{"event_type":"deconn","admin":"Xiyao","password":"123456"}
+
+Feb 24, 2017 10:03:33 AM ceiSmartalarm.Log info
+INFO: Http response :Event type not found
+Feb 24, 2017 10:05:12 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60214
+Feb 24, 2017 10:07:10 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:07:10 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:07:10 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded.
+Feb 24, 2017 10:07:10 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:07:19 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60229
+Feb 24, 2017 10:07:19 AM ceiSmartalarm.Log info
+INFO: Http response :200 Incorrect demand body format.
+Feb 24, 2017 10:08:35 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:08:36 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:08:38 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080
+Feb 24, 2017 10:08:38 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:09:24 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:09:24 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:09:24 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Feb 24, 2017 10:09:24 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:09:46 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60246
+Feb 24, 2017 10:11:24 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:11:25 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:11:25 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Feb 24, 2017 10:11:25 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:11:30 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60273
+Feb 24, 2017 10:16:29 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:16:29 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:16:29 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Feb 24, 2017 10:16:29 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:16:33 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60428
+Feb 24, 2017 10:18:42 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:18:42 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:18:42 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Feb 24, 2017 10:18:42 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:18:45 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60442
+Feb 24, 2017 10:26:26 AM ceiSmartalarm.Log info
+INFO: Acess token got : 58453d6229977e1ea68b968f|8ed0073aa2336340c8400738bc08cff0
+Feb 24, 2017 10:26:26 AM ceiSmartalarm.Log info
+INFO: Drop odd addhook succeeded.
+Feb 24, 2017 10:26:27 AM ceiSmartalarm.Log info
+INFO: Add new addhook succeeded: http://43.ip-51-255-41.eu:8080/api/netatmo
+Feb 24, 2017 10:26:27 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 24, 2017 10:26:31 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60582
+Feb 24, 2017 10:26:31 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 authentification succeeded.
+Feb 24, 2017 10:27:18 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60592
+Feb 24, 2017 10:27:18 AM ceiSmartalarm.Log info
+INFO: Http response :200 Incorrect demand body format.
+Feb 24, 2017 10:27:30 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:60595
+Feb 24, 2017 10:27:30 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 10:37:32 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 10:41:28 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62105
+Feb 27, 2017 10:41:28 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:06:09 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:06:14 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62350
+Feb 27, 2017 11:06:15 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:09:42 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:09:46 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62370
+Feb 27, 2017 11:09:46 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:11:59 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:12:03 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62404
+Feb 27, 2017 11:12:04 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:14:29 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:14:35 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62422
+Feb 27, 2017 11:14:35 AM ceiSmartalarm.Log info
+INFO: Http response :HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:20:25 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:20:28 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62465
+Feb 27, 2017 11:20:28 AM ceiSmartalarm.Log info
+INFO: Http response of server:HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:20:28 AM ceiSmartalarm.Log info
+INFO: Http response ended and recorded.
+Feb 27, 2017 11:21:24 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:21:27 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62468
+Feb 27, 2017 11:21:27 AM ceiSmartalarm.Log info
+INFO: Http response of server:HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:21:27 AM ceiSmartalarm.Log info
+INFO: Http response ended and recorded./0:0:0:0:0:0:0:1:62468
+Feb 27, 2017 11:22:38 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:22:41 AM ceiSmartalarm.Log info
+INFO: New connection accepted : /0:0:0:0:0:0:0:1:62481
+Feb 27, 2017 11:22:41 AM ceiSmartalarm.Log info
+INFO: Http response of server:HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:22:41 AM ceiSmartalarm.Log info
+INFO: Connexion ended and recorded./0:0:0:0:0:0:0:1:62481
+Feb 27, 2017 11:24:14 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:24:16 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62488New connection accepted.
+Feb 27, 2017 11:24:16 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62488Response of server:HTTP/1.1 200 deconnexion succeeded.
+Feb 27, 2017 11:24:16 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62488Connexion ended and recorded.
+Feb 27, 2017 11:24:48 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62493New connection accepted.
+Feb 27, 2017 11:24:48 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62493Response of server:HTTP/1.1 200 authentification succeeded.
+Feb 27, 2017 11:24:48 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62493Connexion ended and recorded.
+Feb 27, 2017 11:33:51 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 27, 2017 11:33:54 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62604New connection accepted.
+Feb 27, 2017 11:33:54 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62604Response of server:HTTP/1.1 200 authentification succeeded.
+Feb 27, 2017 11:33:54 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:62604Connexion ended and recorded.
+Feb 28, 2017 10:00:19 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 28, 2017 10:00:24 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56566New connection accepted.
+Feb 28, 2017 10:00:25 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56566 Request content:{"event_type":"connexion","admin":"Xiyao","password":"123456","fcm":"sdsdsdsd"}
+Feb 28, 2017 10:00:25 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56566 Response of server:HTTP/1.1 200 authentification succeeded.
+Feb 28, 2017 10:00:25 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56566 Connexion ended and recorded.
+Feb 28, 2017 10:01:01 AM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Feb 28, 2017 10:01:03 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56571New connection accepted.
+Feb 28, 2017 10:01:03 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56571 Request content:{"event_type":"connexion","admin":"Xiyao","password":"123456","fcm":"sdsdsdsd"}
+Feb 28, 2017 10:01:03 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56571 Response of server:HTTP/1.1 200 authentification succeeded.
+Feb 28, 2017 10:01:03 AM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:56571 Connexion ended and recorded.
+Mar 02, 2017 4:56:37 PM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Mar 02, 2017 4:57:00 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50665New connection accepted.
+Mar 02, 2017 4:57:00 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50665 Request content:
+Mar 02, 2017 4:57:00 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50665 Response of server:HTTP 200 Destination not found.
+Mar 02, 2017 4:57:01 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50665 Connexion ended and recorded.
+Mar 02, 2017 4:57:59 PM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Mar 02, 2017 4:58:08 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50676New connection accepted.
+Mar 02, 2017 4:58:08 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50676 Request content:
+Mar 02, 2017 4:58:08 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50676 Response of server:HTTP 200 Destination not found.
+Mar 02, 2017 4:58:09 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50676 Connexion ended and recorded.
+Mar 02, 2017 4:58:41 PM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Mar 02, 2017 4:58:46 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50822New connection accepted.
+Mar 02, 2017 4:58:46 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50822 Request content:{"event_type":"connexion","admin":"Xiyao","password":"123456","fcm":"sdsdsdsd"}
+Mar 02, 2017 4:58:46 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50822 Response of server:HTTP 200 Destination not found.
+Mar 02, 2017 4:58:46 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50822 Connexion ended and recorded.
+Mar 02, 2017 4:58:52 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50824New connection accepted.
+Mar 02, 2017 4:58:52 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50824 Request content:{"event_type":"connexion","admin":"Xiyao","password":"123456","fcm":"sdsdsdsd"}
+Mar 02, 2017 4:58:52 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50824 Response of server:HTTP 200 Destination not found.
+Mar 02, 2017 4:58:52 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50824 Connexion ended and recorded.
+Mar 02, 2017 5:00:42 PM ceiSmartalarm.Log info
+INFO: Server started, listening on port : 8080
+Mar 02, 2017 5:00:48 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50839New connection accepted.
+Mar 02, 2017 5:00:49 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50839 Request content:{"event_type":"connexion","admin":"Xiyao","password":"123456","fcm":"sdsdsdsd"}
+Mar 02, 2017 5:00:49 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50839 Response of server:HTTP/1.1 200 authentification succeeded.
+Mar 02, 2017 5:00:49 PM ceiSmartalarm.Log info
+INFO: /0:0:0:0:0:0:0:1:50839 Connexion ended and recorded.

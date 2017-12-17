@@ -1,0 +1,117 @@
+<div class="side-form">
+  <div *ngIf="personneCiblee; else newTemplate">
+      <h1 *ngIf="!id" >{{ajouter}}</h1>
+      <h1 *ngIf="id" >{{modifier}} </h1>
+      <div class="form-container">
+
+          <form (ngSubmit)="saveUpdatePersonne()" >
+            <div class="form-group">
+              <label for="nom">Nom*</label>
+              <input  *ngIf="!x" type="text" name="nom" [(ngModel)]="personneCiblee.nom" class="form-control" required />
+              <input  *ngIf="x" type="text" name="nom" [(ngModel)]="x.nom" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="prenom">Prenom*</label>
+              <input  *ngIf="!x" type="text" name="prenom"[(ngModel)]="personneCiblee.prenom" class="form-control" required />
+              <input  *ngIf="x" type="text" name="prenom"[(ngModel)]="x.prenom" class="form-control" required />
+            </div>
+
+            <div *ngIf="!x" class="form-group">
+              <label for="nom">Status*</label><br/>
+
+              <select style="background: #E6F1F5;
+                              width: 400px;
+                              height: 20px;
+                              line-height: 50px;
+                              color: black;
+                              text-align: center;"
+              [(ngModel)]="personneCiblee.status" name="status" >
+                <option>Propriétaire</option>
+                <option>Famille</option>
+                <option>Ami</option>
+                <option>Autre</option>
+              </select>
+
+              </div>
+
+              <div *ngIf="x" class="form-group">
+              <label for="nom">Status*</label><br/>
+
+              <select style="background: #E6F1F5;
+                              width: 400px;
+                              height: 20px;
+                              line-height: 50px;
+                              color: black;
+                              text-align: center;"
+              [(ngModel)]="x.status" name="status" >
+                <option>Famille</option>
+                <option>Ami</option>
+                <option>Autre</option>
+              </select>
+
+              </div>
+
+            <div *ngIf="!x" class="form-group">
+              <label for="nom">commentaire*</label>
+              <input type="text" name="commentaire" [(ngModel)]="personneCiblee.commentaire" class="form-control" required />
+            </div>
+
+            <div  *ngIf="x" class="form-group">
+              <label for="nom">commentaire*</label>
+              <input type="text" name="commentaire" [(ngModel)]="x.commentaire" class="form-control" required />
+            </div>
+
+
+
+            <div  *ngIf="!x" class="form-group">
+              <label for="nom">Type d'autorisation*</label>  {{personneCiblee.type_autorisation}}  <br/>
+              <input type="radio" [(ngModel)]="personneCiblee.type_autorisation" name="autorisation" value="total" checked> Total<br>
+              <input type="radio" [(ngModel)]="personneCiblee.type_autorisation" name="autorisation" value="restreint"> Restreint<br>
+            </div>
+
+            <div  *ngIf="x" class="form-group">
+              <label for="nom">Type d'autorisation*</label>  {{x.type_autorisation}}  <br/>
+              <input type="radio" [(ngModel)]="x.type_autorisation" name="autorisation" value="total" checked> Total<br>
+              <input type="radio" [(ngModel)]="x.type_autorisation" name="autorisation" value="restreint"> Restreint<br>
+            </div>
+
+            <div *ngIf="personneCiblee.type_autorisation == 'restreint' && !x" class="form-group">
+              <label for="nom">Date et durée d'autorisation</label> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.sunday" type="checkbox" name="sunday" value="sunday"> Dimanche de {{personneCiblee.startsunday}} jusqu'à {{personneCiblee.endsunday}}<div *ngIf="personneCiblee.sunday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startsunday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endsunday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.monday" type="checkbox" name="monday" value="monday"> Lundi de {{personneCiblee.startmonday}} jusqu'à {{personneCiblee.endmonday}}<div *ngIf="personneCiblee.monday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startmonday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endmonday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.tuesday" type="checkbox" name="tuesday" value="tuesday"> Mardi de {{personneCiblee.starttuesday}} jusqu'à {{personneCiblee.endtuesday}}<div *ngIf="personneCiblee.tuesday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.starttuesday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endtuesday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.wednesday" type="checkbox" name="wednesday" value="wednesday"> Mercredi de {{personneCiblee.startwednesday}} jusqu'à {{personneCiblee.endwednesday}}<div *ngIf="personneCiblee.wednesday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startwednesday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endwednesday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.thursday" type="checkbox" name="thursday" value="thursday"> Jeudi de {{personneCiblee.startthursday}} jusqu'à {{personneCiblee.endthursday}}<div *ngIf="personneCiblee.thursday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startthursday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endthursday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.friday" type="checkbox" name="friday" value="friday"> Vendredi de {{personneCiblee.startfriday}} jusqu'à {{personneCiblee.endfriday}}<div *ngIf="personneCiblee.friday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startfriday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endfriday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="personneCiblee.saturday" type="checkbox" name="saturday" value="saturday"> Samedi de {{personneCiblee.startsaturday}} jusqu'à {{personneCiblee.endsaturday}}<br><div *ngIf="personneCiblee.saturday" > de <input type="text" name="start" [(ngModel)]="personneCiblee.startsaturday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="personneCiblee.endsaturday" class="form-control" required /></div> </div> <br/>
+              </div>
+
+              <div *ngIf="x && x.type_autorisation == 'restreint' " class="form-group">
+              <label for="nom">Date et durée d'autorisation</label> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.sunday" type="checkbox" name="sunday" value="sunday"> Dimanche de {{x.startsunday}} jusqu'à {{x.endsunday}} <div *ngIf="x.sunday" > de <input type="text" name="start" [(ngModel)]="x.startsunday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endsunday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.monday" type="checkbox" name="monday" value="monday"> Lundi de {{x.startmonday}} jusqu'à {{x.endmonday}} <div *ngIf="x.monday" > de <input type="text" name="start" [(ngModel)]="x.startmonday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endmonday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.tuesday" type="checkbox" name="tuesday" value="tuesday"> Mardi de {{x.starttuesday}} jusqu'à {{x.endtuesday}}<div *ngIf="x.tuesday" > de <input type="text" name="start" [(ngModel)]="x.starttuesday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endtuesday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.wednesday" type="checkbox" name="wednesday" value="wednesday"> Mercredi de {{x.startwednesday}} jusqu'à {{x.endwednesday}}<div *ngIf="x.wednesday" > de <input type="text" name="start" [(ngModel)]="x.startwednesday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endwednesday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.thursday" type="checkbox" name="thursday" value="thursday"> Jeudi de {{x.startthursday}} jusqu'à {{x.endthursday}}<div *ngIf="x.thursday" > de <input type="text" name="start" [(ngModel)]="x.startthursday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endthursday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.friday" type="checkbox" name="friday" value="friday"> Vendredi de {{x.startfriday}} jusqu'à {{x.endfriday}}<div *ngIf="x.friday" > de <input type="text" name="start" [(ngModel)]="x.startfriday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endfriday" class="form-control" required /></div> </div> <br/>
+              <div style="display:inline-block">  <input [(ngModel)]="x.saturday" type="checkbox" name="saturday" value="saturday"> Samedi de {{x.startsaturday}} jusqu'à {{x.endsaturday}}<br><div *ngIf="x.saturday" > de <input type="text" name="start" [(ngModel)]="x.startsaturday" class="form-control" required /> jusqu'à <input type="text" name="end" [(ngModel)]="x.endsaturday" class="form-control" required /></div> </div> <br/>
+              </div>
+
+
+            <div class="form-group">
+                <a class="btn btn-default" routerLink="/home/personne">Annuler</a>
+                <button class="btn btn-primary">{{choixBouton}}</button>
+              </div>
+
+          </form>
+
+<!--          <button class="btn btn-primary" (click)="a()" >show</button>    -->
+
+        </div>
+  </div>
+
+<p style="color:red">{{errMessage}}</p>
+<p style="color:green">{{successMessage}}</p>
+
+
+</div>

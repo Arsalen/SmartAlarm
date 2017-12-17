@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.spring.test.security.model.security.User"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+<fullyQualifiedTypeName name="org.json.JSONException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.jni.Socket"/>
+<fullyQualifiedTypeName name="com.spring.test.cei.smartalarm_serveur.smartalarm_serveur.src.ceiSmartalarm.ConnectionNetatmo"/>
+<fullyQualifiedTypeName name="com.spring.test.cei.smartalarm_serveur.smartalarm_serveur.src.ceiSmartalarm.Log"/>
+<fullyQualifiedTypeName name="com.spring.test.cei.smartalarm_serveur.smartalarm_serveur.src.ceiSmartalarm.Server"/>
+<fullyQualifiedTypeName name="net.minidev.json.JSONObject"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.spring.test.DAO.HistoriqueRepository"/>
+<fullyQualifiedTypeName name="com.spring.test.entities.Historique"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+<fullyQualifiedTypeName name="com.spring.test.DAO.SongRepository"/>
+</qualifiedTypeNameHistroy>

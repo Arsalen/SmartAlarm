@@ -1,0 +1,25 @@
+
+
+<div class="panel panel-default" >
+  <div class="panel-body">
+    <p style="float:right"><span class="label label-info">{{article.date}} : {{article.temps}}</span></p>
+    <h2>{{article.titre}}</h2>
+    
+    <p>
+      {{smallContenue}}
+    </p>
+  </div>
+
+
+  <div class="panel-footer" style="background-color: #2D3F51;color: white ;">
+      <p  >Par {{article.membre.nom_prenom}} /  <span class="glyphicon glyphicon-thumbs-up"></span> <span class="badge">{{article.nombre_aimes}}</span> /
+      <span class="glyphicon glyphicon-comment"></span> <span class="badge">{{article.nombre_commentaires}}</span>
+      
+      
+       <a routerLink="/publication/{{article.id}}" style="float:right">Voir détails</a> </p>
+              
+  </div>
+</div>
+
+
+

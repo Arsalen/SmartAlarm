@@ -1,0 +1,34 @@
+
+
+<div class="container"  >
+  
+  <div class="panel panel-default"  *ngIf="members" >
+    <div class="panel-heading">Liste des membres</div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-6">
+            <br>
+            <div class="list-group"  >
+              <div *ngFor="let member of members">
+              <a  routerLink="{{member.id_membre}}"  class="list-group-item" >{{member.nom_prenom}} </a>
+              </div>
+    
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <br>
+            <md-card>
+              <h3>Recherche par mot clé</h3>
+              <br>
+              <md-input placeholder="nom du membre" >
+
+              </md-input>
+            </md-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

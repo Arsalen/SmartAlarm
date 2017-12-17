@@ -1,0 +1,235 @@
+<div class="well"><p>Espace de contôle</p></div>
+
+<md-tab-group>
+  <md-tab>
+    <template md-tab-label>Historique</template>
+    <template md-tab-content>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Accés autorisé?</th>
+        <th>Alias</th>
+        
+
+      </tr>
+    </thead>
+    <tbody *ngIf="historiques">
+      <tr *ngFor="let historique of historiques">
+
+       
+
+        <td>{{historique.datetime}}</td>
+        <td><p *ngIf='historique.canPass' style="color:green">Oui</p><p *ngIf='!historique.canPass' style="color:red">Non</p></td>
+<!--        <td>{{historique.canPass}}</td>   -->
+        <td>{{historique.user_login}}</td>
+                
+      </tr>
+
+    </tbody>
+  </table>
+
+    </template>
+  </md-tab>
+
+
+
+<!--  <md-tab>
+    <template md-tab-label>Historique serveur</template>
+    <template md-tab-content>
+
+
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Centent</th>
+        <th>Contenttype</th>
+        <th>Method</th>
+        <th>Response</th>
+        <th>Source</th>
+        <th>Time</th>
+        <th>Useragent</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="historiques_serveur">
+      <tr *ngFor="let historiqueserveur of historiques_serveur">
+        <td>{{historiqueserveur.id}}</td>
+        <td>{{historiqueserveur.centent}}</td>
+        <td>{{historiqueserveur.contenttype}}</td>
+        <td>{{historiqueserveur.method}}</td>
+        <td>{{historiqueserveur.response}}</td>
+        <td>{{historiqueserveur.source}}</td>
+        <td>{{historiqueserveur.time}}</td>
+        <td>{{historiqueserveur.userAgent}}</td>
+        
+      </tr>
+
+    </tbody>
+  </table>
+
+
+    </template>
+  </md-tab>     -->
+
+
+<!--  <md-tab>
+    <template md-tab-label>Lockstate</template>
+    <template md-tab-content>
+
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Currentstate</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="lockstates">
+      <tr *ngFor="let lockstate of lockstates">
+        <td>{{lockstate.id}}</td>
+        <td>{{lockstate.currentState}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+    </template>
+  </md-tab> -->
+
+
+
+
+
+
+
+
+  <md-tab>
+    <template md-tab-label>Personnes autorisées</template>
+    <template md-tab-content>
+      <br/>
+        <a routerLink="add"><button md-raised-button color="primary">Autoriser une nouvelle personne</button></a>
+        <a routerLink="/home/personne"><button md-raised-button color="primary" (click)="loadPersonnes()" >Liste des personnes autorisées</button></a>
+
+
+
+ <table class="table table-striped">
+    <thead>
+      <tr>
+<!--        <th>ID</th>
+        <th>Email</th>
+        <th>Enabled</th>
+        <th>Fcm Token</th>
+        <th>Last Password reset date</th>
+        <th>Password</th>
+        <th>song</th>   -->
+
+        <th>Alias</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Status</th>
+        <th>Commentaire</th>
+        <th>Type d'autorisation</th>
+        <th>durée d'autorisation</th>
+
+        <th class="delete-column"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="y">
+        <td><p >{{y.username}}</p></td>
+        <td><p >{{y.nom}}</p></td>
+        <td><p >{{y.prenom}}</p></td>
+        <td><p >{{y.status}}</p></td>
+        <td><p >{{y.commentaire}}</p></td>
+        <td><p >{{y.typeautorisation}}</p></td>
+        <td><p >{{y.tempsautorisation}}</p></td>
+      </tr>
+
+      <tr *ngFor="let personne of personne_autorisee">
+<!--        <td>{{personne.id}}</td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.email}}</a></td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.enabled}}</a></td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.fcmtoken}}</a></td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.lastPasswordResetDate}}</a></td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.password}}</a></td>
+        <td><a [routerLink]="['edit', personne.id]">{{personne.song}}</a></td>    -->
+
+        <td><p >{{personne.username}}</p></td>
+        <td><p >{{personne.nom}}</p></td>
+        <td><p >{{personne.prenom}}</p></td>
+        <td><p >{{personne.status}}</p></td>
+        <td><p >{{personne.commentaire}}</p></td>
+        <td><p >{{personne.typeautorisation}}</p></td>
+        <td><p >{{personne.tempsautorisation}}</p></td>
+        
+<!--        <td><button (click)="delete(personne.id)"> <span class="glyphicon" style="color: red;" >&#xe014;</span> </button></td>    -->
+      <td><button> <a [routerLink]="['edit', personne.id]"> <span class="glyphicon-pencil" style="color: green;" >&#xe014;</span> </a> </button></td>
+      <td><button data-toggle="modal" data-target=".bs-example-modal-ss" (click)="delete(personne)" > <span class="glyphicon" style="color: red;" >&#xe014;</span> </button></td>
+      </tr>
+
+
+      <p *ngIf='deleted == false' style="color:red">{{errMessage}}</p> <p *ngIf='deleted == true' style="color:green">{{successMessage}}</p>
+    </tbody>
+  </table>
+      <div class="view-side-form">
+        <router-outlet></router-outlet>
+      </div>
+
+    </template>
+  </md-tab>
+
+    <div class="modal bs-example-modal-ss" tabindex="-1" role="dialog" aria-hidden="true" >
+      <div class="modal-dialog modal-ss">
+        <div class="modal-content">
+          <div class="modal-header"><h4>Supprimer un utilisateur <i class="fa fa-lock"></i></h4></div>
+          <div class="modal-body" style="align-content: center;"><i class="fa fa-question-circle"></i> Vous allez supprimer un utilisateur<br>Voulez-vous continuer ?</div>
+          <div class="modal-footer"><a href="javascript:;" class="btn btn-primary btn-block" >Supprimer</a></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!--
+  <md-tab>
+    <template md-tab-label>Mélodies</template>
+    <template md-tab-content>
+
+    <br>
+        <div class="col-sm-9">
+        </div>
+        <div class="col-sm-3">
+            <a routerLink="addsong"><button md-raised-button color="primary">Ajouter une nouvelle mélodie</button></a>
+        </div>
+
+ <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th class="delete-column"></th>
+      </tr>
+    </thead>
+    <tbody *ngIf="melodie_autorisee">
+      <tr *ngFor="let melodie of melodie_autorisee">
+        <td>{{melodie.id}}</td>
+        <td><a [routerLink]="['edit', melodie.id]">{{melodie.name}}</a></td>
+        <td><button (click)="deleteMelodie(melodie.id)"> <span class="glyphicon" style="color: red;" >&#xe014;</span> </button></td>
+      </tr>
+
+    </tbody>
+  </table>
+      <div class="view-side-form">
+        <router-outlet></router-outlet>
+      </div>
+
+    </template>
+  </md-tab> -->
+</md-tab-group>

@@ -1,0 +1,24 @@
+<div class="side-form">
+  <div *ngIf="melodieCiblee; else newTemplate">
+      <h1>{{title}}</h1>
+      <div class="form-container">
+
+          <form (ngSubmit)="saveMelodie()" >
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" name="name" [(ngModel)]="melodieCiblee.name" class="form-control" required />
+            </div>
+
+              <div class="form-group">
+                <a class="btn btn-default" routerLink="/home/personne">Annuler</a>
+                <button class="btn btn-primary">{{choixBouton}}</button>
+              </div>
+          </form>
+        </div>
+  </div>
+
+
+<p style="color:red">{{errMessage}}</p>
+<p style="color:green">{{successMessage}}</p>
+
+</div>

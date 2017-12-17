@@ -1,0 +1,43 @@
+<div *ngIf="forums">
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    
+    <div class="row">
+
+      <div class="col-sm-9">Liste des forums</div>
+      <div class="col-sm-3">
+
+        
+        <button type="button" class="btn btn-default" (click)="gotToProp()" >Proposer un sujet de forum</button>
+        
+      </div>
+    </div>
+    
+    
+
+  </div>
+  <div class="panel-body">
+	<div class="row" > 
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>2017  Forums</th>
+              <th> Forum Date</th>        
+            </tr>
+          </thead>
+          <tbody>
+           <tr *ngFor="let forum of forums">
+            <td><a routerLink="/forum/{{forum.id}}">{{forum.titre}}</a><br/><i class="fa fa-map-marker"></i> mots clés:  <span *ngFor="let mot of forum.mots_cles" class="label label-warning" style="margin-right:7px;" >{{mot}}</span>   <br/>Postulé à  {{forum.temps}}</td>
+            <td>{{forum.date}}</td>
+          </tr>
+          <!--<tr class="active"> -->
+        </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+</div>
+</div>
+</div>

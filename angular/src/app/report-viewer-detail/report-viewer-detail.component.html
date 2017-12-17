@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+<br><br>
+<div class="container">
+    <div class="panel panel-warning" *ngIf="article">
+      <div class="panel-heading">
+        <p style="float:right"><span class="label label-info">{{article.date}} : {{article.temps}}</span></p>
+        <h2>{{article.titre}}</h2>
+        
+        <p>postule par <span class="label label-default"> {{article.membre.nom_prenom}}</span></p>
+      </div>
+      <div class="panel-body">
+      <p style="font-size:13pt;">
+        {{article.contenue}}
+      </p>
+      <hr>
+      <button md-raised-button color="primary">version pdf  </button>
+      <button md-raised-button color="primary"><span class="glyphicon glyphicon-thumbs-up"></span> Like  </button>
+      
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

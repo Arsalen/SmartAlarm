@@ -1,0 +1,122 @@
+
+
+<div *ngIf="forum">
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>{{forum.titre}}</h3>
+          <p>cree le {{forum.date}} a {{forum.temps}}</p>
+          Mots clees: 
+          <span style="margin-left:4px" *ngFor="let mot of forum.mots_cles" class="label label-warning">{{mot}}</span> 
+           
+          
+        </div>
+          
+        <div class="panel-body">
+          <md-card>
+            <h3>Sujet:</h3>
+            <p>{{forum.subject}}
+
+              Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula
+              Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula
+              Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula
+              Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula
+              Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula
+            </p>
+
+                
+
+
+            <br>
+            <hr>
+            <p style="float:right">postulé par <span class="label label-success">{{forum.creator_email}}</span> </p>
+          </md-card>
+          <br><br>
+          <h3>Liste des commantaires</h3>
+          
+
+          <div *ngFor="let commentaire of commentaires">
+          <br>
+          <div class="panel panel-default">
+            <div class="panel-body">
+             {{commentaire.contenue}}
+            </div>
+            <div class="panel-footer" style="background-color: #2D3F51;color: white">postule par  <span style="margin-right:10px;" class="label label-success">  {{commentaire.email_proprietere}}</span></div>
+          </div>
+          <br>
+          </div>
+
+
+
+
+
+
+
+
+
+<!-- add a comment section-->
+<hr>
+<br>
+
+	<div class="row">
+      <div class="col-md-9 ">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Ajouter un commentaire</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label"   for="name">Nom</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text"  [(ngModel)]="nom" placeholder="Nom" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" [(ngModel)]="email" placeholder="Email" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Commentaire</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" [(ngModel)]="commentaire" name="message" placeholder="Commentaire" rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button md-raised-button color="primary"  (click)="logFormValues()" >submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+
+<!-- add a comment section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+</div>

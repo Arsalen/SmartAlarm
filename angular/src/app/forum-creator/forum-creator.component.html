@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Création d'un forum</div>
+
+    <div class="panel-body">
+        
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">Saisir vos données</h3>
+    				<div class="form-group">
+						<input type="text" class="form-control" id="name" [(ngModel)]="form.nom"  name="name" placeholder="Nom" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="email" name="email" [(ngModel)]="form.email"  placeholder=" Email" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="mobile" name="mobile"  [(ngModel)]="form.numero" placeholder="Numero telephone" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="subject" name="subject"  [(ngModel)]="form.sujet"  placeholder="Sujet" required>
+					</div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea"  [(ngModel)]="form.contenue" id="message" placeholder="Contenu" maxlength="500" rows="7"></textarea>
+                                            
+                    </div>
+      
+        <button type="button" id="submit"  (click)="test()"  name="submit" class="btn btn-primary pull-right">Submit </button>
+        </form>
+    </div>
+</div>
+</div>
+          </div>
+          <div class="col-sm-6">
+            <img src="http://maltesas.com/mmbs/images/icon-forum.png" style="width:50%;height:50%;margin-left:70px;margin-top: 40px;" />
+          </div>
+        
+        </div>
+    </div>
+  </div>
+</div>

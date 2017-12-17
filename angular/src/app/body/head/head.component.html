@@ -1,0 +1,61 @@
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,900' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+
+<header>
+<nav id="nav" class="ry">
+  <ul id="main-menu">
+    <li>
+      <a routerLink="/acceil"><i class="fa fa-home"></i> Accueil</a>
+    </li>
+    <li>
+     <a routerLink="/news">News</a>
+    </li>
+    <li>
+        <a routerLink="/forums"><i class="fa fa-comment"></i> Forums</a>
+    </li>
+  
+    <li>
+    <a routerLink="/membres"><i class="fa fa-home"></i> Membres</a>
+    </li>
+    <li>
+    <a routerLink="/publications"><i class="fa fa-home"></i> Publications</a>
+    </li>
+      <li>
+      <a routerLink="/contact"><i class="fa fa-comment"></i> Contact</a>
+    </li>
+    
+  <a routerLink="/connextion" style="float:right;"> connexion</a>
+  </ul>
+
+</nav>  
+</header>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+<script>
+radioChange( $('input[name="efx"]'), $('#nav'), $('#efx-name') );
+radioChange( $('input[name="ease"]'), $('#main-menu'), $('#efx-ease'));
+
+function radioChange(inputs, addClassTo, appendTo) {
+  inputs.hide();
+  inputs.on( 'change', function() { 
+    inputs.each( function() {
+      if ( $(this).is(':checked') ) {
+        addClassTo.attr('class', $(this).val() );
+        var radioName = $(this).next('span').text(); 
+        appendTo.text(radioName);
+      }
+  
+    });
+  }); 
+}
+
+</script>

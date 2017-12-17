@@ -1,0 +1,127 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Groupe de tchat</div>
+  <div class="panel-body">
+
+
+    <div class="row">
+      <div class="col-sm-7">
+        <p>Liste des membres</p>
+        <ul class="list-group" *ngIf="members" >
+          <li class="list-group-item"  *ngFor="let member of members"   >{{member.nom_prenom}}
+            <div class="spl">
+              <span (click)="select_member(member)"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+
+<!--         
+          <li class="list-group-item">Harry 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Shawn 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-minus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Teresa 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+         <li class="list-group-item">Edward 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Harry 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Maladous 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-minus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Teresa 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Rebecca 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Bonnie 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+          <li class="list-group-item">Patrick 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+           <li class="list-group-item">Michelle 
+            <div class="spl">
+              <span (click)="log()"   class="glyphicon glyphicon-plus"></span> 
+            </div>
+         </li>
+         -->
+        </ul>
+
+      </div>
+      <div class="col-sm-4">
+        <h3>Selectionner les membres à ajouter</h3>
+        <md-card>
+          <p>  Les membres selectionnés </p>
+          
+          <div *ngIf="selectedMembers">
+          <span   class="label label-warning"  *ngFor="let i of selectedMembers"    style="float:left;margin-left:10px;margin-bottom:5px">{{i.nom_prenom}}</span>
+          </div>
+          <div style="height:20px;"></div>
+        </md-card>
+        <br>
+        <md-card>
+          
+          <button md-raised-button color="primary" style="width:97%;" (click)="not_ready_component()" >Créer groupe</button>
+        </md-card>
+        
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
